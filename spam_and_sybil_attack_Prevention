@@ -1,0 +1,126 @@
+None of the below is new, I'm just thinking in public.
+
+
+https://en.wikipedia.org/wiki/Sybil_attack
+https://en.wikipedia.org/wiki/Spamming
+
+Spam is a set of unwanted messages
+A sybil attack is when a user creates multiple pseudonyms to further some purpose.
+
+For example, say there's a finitelist of identities, i, and each is associated to a list of pseudonyms, p.
+This creates a list of tuples [(i, p)] ( or [(i, [p])], if you don't want repeating identities) defining the relation between
+pseudonyms and identites.
+
+Then a sybil attack can only work when, given a pseudonym, one cannot reasonably deduce an identity.
+for example, if i is chosen to be a private key, and p is chosen to be a set of public keys,
+and if one-way functions exist, then it should be the case that one can create an arbitrary number of p
+given a single i.
+
+For spam, a message requires at least two parties A and B, where party A wishes to send a message to party B.
+let this be notated (p_A_x, p_B_x, m) where p_Agent_n stands for the Agent's nth pseudonym.
+
+if m is spam, then B does not want to receive it, even though A wishes to send it.
+to avoid reading the spam, B might create a filter on the basis of the sender or message.
+if the content of the message is scanned, this offloads the task of reading the message and making a determination onto the computer.
+if the sender is identified as a sender of spam, then the p_A_n might be blocked.
+Then, A can leverage the mechanism of the sybil attack, to create p_A_(n+1), and send the message.
+because the identity behind p_B_1 has not blocked p_A_(n+1), they receive the message.
+
+Another approach to preventing this is to rely on a "pull-based" system, where p_B_1 seeks out messages
+from an identity with a lower probability of spam production.
+Then, p_B_1 places pseudonyms associated to this identity onto a whitelist (e.g. rss, or following and subscribing on social media)
+p_B_1 has then solved the issue of spam by not accepting messages from arbitrary pseudonyms.
+
+However, consider the original definition.
+Spam is a set of unwanted messages.
+using rss or a subscription service, one might still receive unwanted messages.
+for news platforms and youtube for instance, advertising is used to fund their services.
+
+A definition of advertising is an attempt to bring attention to a product or service, typically in the hopes that it creates a "sale".
+if the user is not interested, then it is spam.
+if the user is interested in the product or service and would like to purchase it, then this is not spam.
+
+To some extent therefore, whether m is spam is not always message-dependent, but also user-dependent and time-dependent.
+For example, consider a recommendation algorithm which always recommends salad.
+If the user just woke up and wants bacon and eggs for breakfast, the message recommending salad is spam.
+However, if they want salad for lunch, it is not.
+
+Thus, B must contruct an appropriate client-side filter to prevent spam, in addition to constructing a white-list.
+This may also benefit from prioritization and indexing of information relative to B's current indication of preference to maximize B's utility.
+
+Thus, this preference relation must be clearly defined.
+
+
+Section 2: Preventing a sybil attack
+A sybil attack (and thus, spam) cannot be prevented when arbitrary pseudonyms are permitted.
+th wikipedia page lists the following defenses
+1. Identity validation
+2. social trust graphs
+3. economic costs
+4. personhood validation
+
+One way to establish that two pseudonyms are under the common control of an identity is via public-key cryptography.
+if a message that can only be read by p_Agent_1 can also be read by p_Agent_2,
+then i_Agent_1 == i_Agent_2, assuming that only that Agent has access to the key.
+if more than one agent has access to that key, then it can be known that the Agent is one of a set of Agents.
+For example, assume Agents A, B, C, and Keys, Key_1, Key_2, Key_3, Key_4, Key_5
+Agent_A: Key_1, Key_4
+Agent_B: Key_2, Key_4, Key_5
+Agent_C: Key_3, Key_5
+
+Then if a pseudonym is sent messages encrypted with Key_4 and Key_5, one knows the identity is Agent B.
+
+Step 1. Construct a finite list of pseudonyms.
+Step 2. No new pseudonyms may be added to this list
+Step 3. issue each pseudonym one key
+  - If two pseudonyms A, B demonstrate common control of a key, then A and B can be consolidated
+  - It may be the case that A was compromised by B in some way.
+      However, if so, then A's pseudonym is under control of B.
+      If B has control of both pseudonyms, then there is no way to uniquely identify A without creating a new pseudonym.
+      This is not allowed, so A must be removed.
+Step 4. Allow Agents to drop-out
+  - if an Agent believes another agent has control of their pseudonym, they can remove themselves.
+
+Remember, a sybil attack can occur if a pair [(i, p)] exists where an adversary cannot determine i from p.
+Therefore, it is not possible to determine an identity from a pseudonym without additional information.
+
+This also does not prevent spam. If an Agent sends a message or set of messages not desired by other users, then spam occurs.
+Preventing spam originating from this Agent would require client-side filtering their messages or not pulling their messages in the first place.
+
+If it cannot be known that the finite list of pseudonyms is one-to-one with a list of identites, then a
+vote with one-vote per identity cannot occur. 
+However, if it is desired to have one vote per identity, then this identity must be inferred, and connected to the pseudonym.
+Additionally, it should be stated that you know your identity, and your pseudonym.
+Thus, you knw (i, p) for you, or more generally, Agent knows the list of pseudonyms [(Agent, p_Agent_n)] for Agent. 
+
+Any mechanism of associating an identity to an agent suffices.
+So If you were to meet another person in-person, and they provide you with their pseudonym in-person, you can validate who they are in-person.
+Thus, if all people in the list attend a conference, and no pseudonym is missing, those pseudonyms are capable of having a one-identity per person vote.
+This prevents a sybil attack, because not new pseudonyms can be added and the relation of identity to pseudonym is known.
+
+However, it may be the case that you have not met them in person. it might be that p_A_1 states that p_Agent_1 is B.
+Then, there is the question, is what p_A_1 states true, and how can this truth be determined?
+
+It could be the case that p_Agent1 and p_Agent2 are under common control.
+However, if they desire to conceal this, they will not admit to it.
+As one cannot prove lack of common control, it is not possible to trust such a reference.
+if A creates B as a pseudonym p_A_2 and you are U, then A knows everything U knows about B.
+Additionally, A knows everything U informs B (because B is A).
+This makes it impossible to determine if B is or is not A, because A can simply pretend not to know the information presented to B.
+
+----- Section 3: Quantifying trust in unique personhood.
+--    Quick throwaway logic.
+Assume a semi-trusted party.
+
+if a party A states that they are not B, but met B in person, then person B is who person A says they are.
+In this case, then it can be trusted with some probability, that person B's pseudonym is controlled by an identity.
+Because person A is trusted with some probability then we can trust by reference.
+Assume further that certain networks iof nodes are traitorous identities, and independent non-traitorous nodes do not want to refer traitor nodes.
+There should then be an exponential decay in trust moving further away from the validator.
+Thus, a network of traitors cannot be more trusted than the validating traitor node.
+
+for n nodes, if there is one duplicate pseudonym, n-1 nodes can be validated in person.
+each identity could choose a primary pseudonym, and the pseudonym which is not validated by the other n-2 nodes can be removed.
+This is because the duplicate pseudonym cannot be present in person without providing evidence that an identity is associated to an additional pseudonym.
+
+-- actual math
