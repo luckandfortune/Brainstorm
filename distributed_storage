@@ -59,9 +59,9 @@ If the storage node does not provide a response, it may still have retained the 
   At most, the client can only access information provided to the storage node.
   Thus, if the client requests data from storage, and the storage node provides said data to client, 
   Then the client can confirm the data was sent as requested by requesting the next hash from you.
-  thus, at time = t_k, you provide the t_k hash to the client, who calculates the hash and provides it to you.
+  thus, at time = t_k, you provide the t_k random number to the client, who calculates the hash and provides it to you for confirmation.
   we thus have proven both that the storage node retained the data at t_k, and that the client received the data (including all prior hashes)
-  Then, we send the hash to the storage node, to ensure it can correctly calculate the next hash. 
+  Then, we send the random number and hash to the storage node, to ensure it can correctly calculate the next hash. 
 
 
 3. Summary
