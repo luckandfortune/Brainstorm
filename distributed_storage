@@ -92,13 +92,13 @@ To add encryption, so that the client, but not storage node, can decrypt the req
 
   Thus, the data is then protected against the storage node knowing the content of the data, while allowing the client to access/use it.
 
-4. Computation. (Just for fun)
+5. Computation. (Just for fun)
   Given both memory and compute, you could define a distributed computer. 
   Add a new node termed a "Compute" node, which can advertise one or more functions. (I believe this is called "serverless")
-  4.1. Set up the above storage (so you have memory to work with)
-  4.2. Set up required functions on the compute server to implement a single-core computer.
-      4.2.1 The functions are assumed to be implemented correctly, and should be tested.
-      4.2.1. Ensuring computation is in the correct order is important, so the model for time in: 
+  5.1. Set up the above storage (so you have memory to work with)
+  5.2. Set up required functions on the compute server to implement a single-core computer.
+      5.2.1 The functions are assumed to be implemented correctly, and should be tested.
+      5.2.1. Ensuring computation is in the correct order is important, so the model for time in: 
           http://research.microsoft.com/users/lamport/pubs/time-clocks.pdf
           should be implemented.
 
@@ -109,18 +109,18 @@ To add encryption, so that the client, but not storage node, can decrypt the req
               and b is the receipt of that message by process Pj, then
               Ci(a) < Cj(b)."
 
-  4.3. From a client perspective, 
-      4.3.1 Request information from the storage node be passed to the compute node.
+  5.3. From a client perspective, 
+      5.3.1 Request information from the storage node be passed to the compute node.
               A computation is defined to simply be a transformation from one set of bits to another.
               Thus, any "event" can then be defined to be an ordering of storage calls.
               where any computation requires storage calls for at least 
                 1. Getting the data (sending data from the storage node to the compute node)
                 2. Storing the results. (sending data from the compute node to the storage node)
                 Each of which can be given separate timesteps.
-      4.3.2 Reserve additional storage to hold the results of the computation.
-      4.3.3 Store the computation results in the newly reserved location. 
+      5.3.2 Reserve additional storage to hold the results of the computation.
+      5.3.3 Store the computation results in the newly reserved location. 
             (Remember that "you" store keys to ensure data was stored up to time t_k)
-      4.3.4 Release the original stored information.
+      5.3.4 Release the original stored information.
             - Any process reliant on this data must be complete to release.
             - Therefore, the "Client" can't delete it, the storage node and "You" need to know the number of compute requests on the data.
             - Additionally, "You", the one controlling the stored data, are then responsible for the release.
