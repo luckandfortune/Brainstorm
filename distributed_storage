@@ -1,0 +1,129 @@
+
+Motivation: 
+Why would this be useful?
+
+Say you have limited hardware, but have money or income, and are willing to pay $X/Month for off-site storage.
+For example, if you want to store data for a mastodon instance, but don't want to maintain multiple computers.
+
+I think the below is basically how web hosting works already,
+just without bothering to double check the file integrity.
+However, say you want to use a peer-to-peer system instead.
+
+Then, if the data is submitted to the storage node and validated,
+the list of computers making up the storage node could be compensated pro-rata via something like bitcoin, to incentivize keeping the data live.
+
+It might then be possible to decrease server-side costs by offloading bandwidth
+to the peer-to-peer storage system, so you see a reduction in server bandwidth proportional to the data/key storage ratio.
+
+(i.e. sending a key and comparing to a pre-calculated hash should be less expensive than sending the actual data)
+
+-----------------------------
+Say you have three nodes
+1. You
+2. Storage node
+3. Client
+
+You generate a file, which you don't want to store on your computer, but
+would like to be available to others via the storage node.
+
+1. Proving storage retention.
+Without requiring security (i.e. data is stored in cleartext)
+, can we determine if data generated from Node 1 is available on Node 2 for Node 3 between times t1 and t2?
+
+First generate the data d_0
+Then generate a list of random numbers r_1 to r_n
+hash d_0 to get h_0, and then append r_1 and hash d_0 ++ r_1 to get h_1.
+repeat this using all random numbers to get a list h_0 to h_n.
+Now, we have a number which is virtually certain to uniquely identify the data, and modified data.
+
+Send the original data, but not the hash, modified data, or random numbers, to Node_2, the storage node.
+The storage node now knows d_0, but not r_1 to r_n or h_1 to h_n.
+at time = t_0, Have the storage node calculate the hash, and compare to the  hash calculated by You.
+This will be the same value.
+at time = t_1, send the storage node r_1, and request it to calculate and send the hash.
+This new value should equal h_1, previously calculated.
+If the storage node did not retain d_0 from t_0 to t_1, it will not be able to calculate the hash.
+Thus, we have determined that between t_0 and t_1, the storage node proves it retained the data, as requested.
+repeat this process for r_2 to r_n.
+request the data between r_(n-1) and r_n, prior to calculating any new hashes.
+Note that if the data storage node does not retain the data between t_(k-1) and t_k, the data is lost.
+Predicting whether data will be retained in the future requires a model for future data loss from a given node.
+(for example, if storing some amount of data on s storage nodes, each of which fail randomly with probability p
+  then you have a lossy channel with some amount of storage capacity, and should use an appropriate amount of error-correction
+  This doesn't consider counter-party risk, where the counterparty intentionally destroys or loses data for any reason,
+  separate from risk relating to the reliability of the underlying hardware)
+  
+If the storage node does not provide a response, it may still have retained the data, but is not proving that it has done so.
+
+2. Proving storage node provided data to client.
+  At most, the client can only access information provided to the storage node.
+  Thus, if the client requests data from storage, and the storage node provides said data to client, 
+  Then the client can confirm the data was sent as requested by requesting the next hash from you.
+  thus, at time = t_k, you provide the t_k hash to the client, who calculates the hash and provides it to you.
+  we thus have proven both that the storage node retained the data at t_k, and that the client received the data (including all prior hashes)
+  Then, we send the hash to the storage node, to ensure it can correctly calculate the next hash. 
+
+
+3. Summary
+We then have the following
+  3.1. The storage node retained the data d_0 at time t_k
+  3.2. At time t_k, the data was provided to some client.
+
+ 4. Encryption
+To add encryption, so that the client, but not storage node, can decrypt the requested data.
+  4.1. Encrypt the data prior to sending to the storage node, using a public key.
+      because the data is encrypted, the storage node will not know what it is.
+
+  4.2. The client requests a key for the data from you. 
+      4.2.1 Possibly with payment, after recieving the encrypted data.
+      4.2.2 This may require a scheme that allows multiple keys, such as the aacs DRM for blu-rays.
+        If it is intended to protect against something other the storage node knowing the data.
+
+        However, if the client is likely to release the data,
+        then it wouldn't be effective for traitor tracing copyright infringement
+        unless sufficiently many keys are generated to uniquely identify users, who may or may not be tracked or logged in to facilitate a lawsuit.
+
+        Protecting anonymity could be considered a competing issue to designing against copyright infringement.
+        To paraphrase something I read once, the more constraints you have on a convex space, the more you'll optimize to somewhere in the middle.      
+
+    4.3 You send a key to the client.
+    4.4 The client requests and validates the data pursuant to 3.2.
+    4.5 Once the client receives the (ecrypted) data, they decrypt it.
+
+  Thus, the data is then protected against the storage node knowing the content of the data, while allowing the client to access/use it.
+
+4. Computation. (Just for fun)
+  Given both memory and compute, you could define a distributed computer. 
+  Add a new node termed a "Compute" node, which can advertise one or more functions. (I believe this is called "serverless")
+  4.1. Set up the above storage (so you have memory to work with)
+  4.2. Set up required functions on the compute server to implement a single-core computer.
+      4.2.1 The functions are assumed to be implemented correctly, and should be tested.
+      4.2.1. Ensuring computation is in the correct order is important, so the model for time in: 
+          http://research.microsoft.com/users/lamport/pubs/time-clocks.pdf
+          should be implemented.
+
+         to quote:
+         "C1. If a and b are events in process P~, and a comes
+               before b, then Ci(a) < Ci(b).
+          C2. If a is the sending of a message by process Pi
+              and b is the receipt of that message by process Pj, then
+              Ci(a) < Cj(b)."
+
+  4.3. From a client perspective, 
+      4.3.1 Request information from the storage node be passed to the compute node.
+              A computation is defined to simply be a transformation from one set of bits to another.
+              Thus, any "event" can then be defined to be an ordering of storage calls.
+              where any computation requires storage calls for at least 
+                1. Getting the data (sending data from the storage node to the compute node)
+                2. Storing the results. (sending data from the compute node to the storage node)
+                Each of which can be given separate timesteps.
+      4.3.2 Reserve additional storage to hold the results of the computation.
+      4.3.3 Store the computation results in the newly reserved location. 
+            (Remember that "you" store keys to ensure data was stored up to time t_k)
+      4.3.4 Release the original stored information.
+            - Any process reliant on this data must be complete to release.
+            - Therefore, the "Client" can't delete it, the storage node and "You" need to know the number of compute requests on the data.
+            - Additionally, "You", the one controlling the stored data, are then responsible for the release.
+                which must occur prior to the expiry of random numbers for storage validation.
+            - If the data is released prior to all processes which rely on it to be complete, the memory failed.
+                In this instance, the process relying on it must throw an error to indicate failure.
