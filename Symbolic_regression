@@ -1,0 +1,395 @@
+Interesting links:
+
+1. https://www.llnl.gov/news/novel-deep-learning-framework-symbolic-regression
+
+2. Livermore Lab events
+ Deep Symbolic Regression: Recovering Math Expressions from Data via Risk-Seeking Policy Gradients 
+https://www.youtube.com/watch?v=o43X6Hni6tU
+
+3. YannicKilcher
+ Discovering Symbolic Models from Deep Learning with Inductive Biases (Paper Explained) 
+https://www.youtube.com/watch?v=LMb5tvW-UoQ
+
+4. https://en.wikipedia.org/wiki/Symbolic_regression
+Links sourced from Wikipedia:
+  5. https://web.archive.org/web/20141218105301/http://symbolicregression.com/
+  6. http://www.mafy.lut.fi/EcmiNL/older/ecmi35/node70.html (failed to load)
+
+7. Contemporary Symbolic Regression Methods and their Relative Performance
+https://arxiv.org/abs/2107.14351
+  https://github.com/EpistasisLab/srbench
+  https://github.com/EpistasisLab/ellyn
+  https://github.com/SJ001/AI-Feynman
+  https://github.com/brendenpetersen/deep-symbolic-regression
+  https://github.com/lacava/feat
+  https://github.com/natekupp/ffx/tree/master/ffx
+  https://github.com/marcovirgolin/GP-GOMEA/
+  https://github.com/trevorstephens/gplearn
+  https://github.com/folivetti/ITEA/
+  https://github.com/flexgp/gp-learners
+  https://github.com/heal-research/operon
+
+Datasets
+  https://space.mit.edu/home/tegmark/aifeynman.html
+  https://github.com/lacava/ode-strogatz
+
+8. https://arxiv.org/abs/1905.11481
+
+References in paper (7):
+[1] Anna Jobin, Marcello Ienca, and Effy Vayena. The global landscape of AI ethics guidelines. Nature
+Machine Intelligence, 1(9):389–399, September 2019. ISSN 2522-5839. doi: 10.1038/s42256-019-0088-2.
+[2] Cynthia Rudin. Stop explaining black box machine learning models for high stakes decisions and use
+interpretable models instead. Nature Machine Intelligence, 1(5):206–215, 2019.
+[3] Michael Schmidt and Hod Lipson. Distilling free-form natural laws from experimental data. Science, 324
+(5923):81–85, 2009.
+[4] Michael Douglas Schmidt and Hod Lipson. Automated modeling of stochastic reactions with large
+measurement time-gaps. In Proceedings of the 13th Annual Conference on Genetic and Evolutionary
+Computation, pages 307–314. ACM, 2011.
+[5] William La Cava, Paul C. Lee, Imran Ajmal, Xiruo Ding, Priyanka Solanki, Jordana B. Cohen, Jason H.
+Moore, and Daniel S. Herman. Application of concise machine learning to construct accurate and
+interpretable EHR computable phenotypes. medRxiv, page 2020.12.12.20248005, February 2021. doi:
+10.1101/2020.12.12.20248005.
+[6] Karolina Stanislawska, Krzysztof Krawiec, and Zbigniew W. Kundzewicz. Modeling global temperature
+changes with genetic programming. Computers & Mathematics with Applications, 64(12):3717–3728,
+December 2012. ISSN 0898-1221. doi: 10.1016/j.camwa.2012.02.049.
+[7] Shu-Heng Chen. Genetic Algorithms and Genetic Programming in Computational Finance. Springer
+Science & Business Media, 2012.
+[8] Guido F. Smits and Mark Kotanchek. Pareto-front exploitation in symbolic regression. In Genetic
+Programming Theory and Practice II, pages 283–299. Springer, 2005.
+[9] William La Cava, Kourosh Danai, Lee Spector, Paul Fleming, Alan Wright, and Matthew Lackner.
+Automatic identification of wind turbine models using evolutionary multiobjective optimization. Renewable
+Energy, 87, Part 2:892–902, March 2016. ISSN 0960-1481. doi: 10.1016/j.renene.2015.09.068.
+[10] Mauro Castelli, Sara Silva, and Leonardo Vanneschi. A C++ framework for geometric semantic genetic
+programming. Genetic Programming and Evolvable Machines, 16(1):73–81, March 2015. ISSN 1389-2576,
+1573-7632. doi: 10.1007/s10710-014-9218-0.
+[11] James McDermott, David R. White, Sean Luke, Luca Manzoni, Mauro Castelli, Leonardo Vanneschi,
+Wojciech Jaskowski, Krzysztof Krawiec, Robin Harper, and Kenneth De Jong. Genetic programming
+needs better benchmarks. In Proceedings of the Fourteenth International Conference on Genetic and
+Evolutionary Computation Conference, pages 791–798. ACM, 2012.
+11[12] David R. White, James McDermott, Mauro Castelli, Luca Manzoni, Brian W. Goldman, Gabriel Kronberger,
+Wojciech Jaśkowski, Una-May O’Reilly, and Sean Luke. Better GP benchmarks: Community survey
+results and proposals. Genetic Programming and Evolvable Machines, 14(1):3–29, December 2012. ISSN
+1389-2576, 1573-7632. doi: 10.1007/s10710-012-9177-2.
+[13] Randal S. Olson, William La Cava, Patryk Orzechowski, Ryan J. Urbanowicz, and Jason H. Moore. PMLB:
+A Large Benchmark Suite for Machine Learning Evaluation and Comparison. BioData Mining, 2017.
+[14] John R. Koza. Genetic Programming: On the Programming of Computers by Means of Natural Selection.
+MIT Press, Cambridge, MA, USA, 1992. ISBN 0-262-11170-5.
+[15] Scott M Lundberg and Su-In Lee. A Unified Approach to Interpreting Model Predictions. page 10.
+[16] Ying Jin, Weilin Fu, Jian Kang, Jiadong Guo, and Jian Guo.
+arXiv:1910.08892 [stat], January 2020.
+Bayesian Symbolic Regression.
+[17] Brenden K. Petersen, Mikel Landajuela Larma, Terrell N. Mundhenk, Claudio Prata Santiago, Soo Kyung
+Kim, and Joanne Taery Kim. Deep symbolic regression: Recovering mathematical expressions from data
+via risk-seeking policy gradients. In International Conference on Learning Representations, September
+2020.
+[18] Silviu-Marian Udrescu and Max Tegmark. AI Feynman: A Physics-Inspired Method for Symbolic
+Regression. arXiv:1905.11481 [hep-th, physics:physics], April 2020.
+[19] Maysum Panju. Automated Knowledge Discovery Using Neural Networks. 2021.
+[20] Matthias Werner, Andrej Junginger, Philipp Hennig, and Georg Martius. Informed Equation Learning.
+arXiv preprint arXiv:2105.06331, 2021.
+[21] Subham Sahoo, Christoph Lampert, and Georg Martius. Learning equations for extrapolation and control.
+In International Conference on Machine Learning, pages 4442–4450. PMLR, 2018.
+[22] Matt J. Kusner, Brooks Paige, and José Miguel Hernández-Lobato. Grammar variational autoencoder. In
+International Conference on Machine Learning, pages 1945–1954. PMLR, 2017.
+[23] Silviu-Marian Udrescu, Andrew Tan, Jiahai Feng, Orisvaldo Neto, Tailin Wu, and Max Tegmark. AI
+Feynman 2.0: Pareto-optimal symbolic regression exploiting graph modularity. arXiv:2006.10782 [physics,
+stat], December 2020.
+[24] Michael Schmidt and Hod Lipson. Distilling free-form natural laws from experimental data. Science, 324
+(5923):81–85, 2009.
+[25] Michael Douglas Schmidt. Machine Science: Automated Modeling of Deterministic and Stochastic
+Dynamical Systems. PhD thesis, Cornell University, Ithaca, NY, USA, 2011.
+[26] Giorgia Fortuna. Automatic Formula Discovery in the Wolfram Language – from Wolfram Library Archive.
+https://library.wolfram.com/infocenter/Conferences/9329/, 2015.
+[27] William La Cava, Lee Spector, and Kourosh Danai. Epsilon-Lexicase Selection for Regression. In
+Proceedings of the Genetic and Evolutionary Computation Conference 2016, GECCO ’16, pages 741–748,
+New York, NY, USA, 2016. ACM. ISBN 978-1-4503-4206-3. doi: 10.1145/2908812.2908898.
+[28] Pawe\l Liskowski and Krzysztof Krawiec. Discovery of Search Objectives in Continuous Domains. In
+Proceedings of the Genetic and Evolutionary Computation Conference, GECCO ’17, pages 969–976, New
+York, NY, USA, 2017. ACM. ISBN 978-1-4503-4920-8. doi: 10.1145/3071178.3071344.
+[29] Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li, and Li Fei-Fei. Imagenet: A large-scale hierarchical
+image database. In 2009 IEEE Conference on Computer Vision and Pattern Recognition, pages 248–255.
+Ieee, 2009.
+12[30] Zachary C Lipton. The Mythos of Model Interpretability: In machine learning, the concept of interpretabil-
+ity is both important and slippery. Queue, 16(3):31–57, 2018.
+[31] Forough Poursabzi-Sangdeh, Daniel G Goldstein, Jake M Hofman, Jennifer Wortman Wortman Vaughan,
+and Hanna Wallach. Manipulating and measuring model interpretability. In Proceedings of the 2021 CHI
+Conference on Human Factors in Computing Systems, pages 1–52, 2021.
+[32] Marco Virgolin, Andrea De Lorenzo, Francesca Randone, Eric Medvet, and Mattias Wahde. Model
+learning with personalized interpretability estimation (ML-PIE). arXiv:2104.06060 [cs], 2021.
+[33] Jan Žegklitz and Petr Pošík. Benchmarking state-of-the-art symbolic regression algorithms. Genetic
+Programming and Evolvable Machines, pages 1–29, 2020.
+[34] Patryk Orzechowski, William La Cava, and Jason H. Moore. Where are we now? A large benchmark study
+of recent symbolic regression methods. In Proceedings of the 2018 Genetic and Evolutionary Computation
+Conference, GECCO ’18, April 2018. doi: 10.1145/3205455.3205539.
+[35] Martin Fowler. Continuous Integration. https://martinfowler.com/articles/continuousIntegration.html,
+2006.
+[36] Joseph D. Romano, Trang T. Le, William La Cava, John T. Gregg, Daniel J. Goldberg, Natasha L. Ray,
+Praneel Chakraborty, Daniel Himmelstein, Weixuan Fu, and Jason H. Moore. PMLB v1.0: An open source
+dataset collection for benchmarking machine learning methods. arXiv:2012.00058 [cs], April 2021.
+[37] Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel,
+Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, et al. Scikit-learn: Machine learning in
+Python. Journal of Machine Learning Research, 12(Oct):2825–2830, 2011.
+[38] Michael Schmidt and Hod Lipson. Age-fitness pareto optimization. In Genetic Programming Theory and
+Practice VIII, pages 129–146. Springer, 2011.
+[39] William La Cava, Thomas Helmuth, Lee Spector, and Jason H. Moore. A probabilistic and multi-objective
+analysis of lexicase selection and epsilon-lexicase selection. Evolutionary Computation, 27(3):377–402,
+September 2019. ISSN 1063-6560. doi: 10.1162/evco_a_00224.
+[40] William La Cava, Tilak Raj Singh, James Taggart, Srinivas Suri, and Jason H. Moore. Learning concise
+representations for regression by evolving networks of trees. In International Conference on Learning
+Representations, ICLR, 2019.
+[41] Trent McConaghy. FFX: Fast, scalable, deterministic symbolic regression technology. In Genetic
+Programming Theory and Practice IX, pages 235–260. Springer, 2011.
+[42] Marco Virgolin, Tanja Alderliesten, Cees Witteveen, and Peter A N Bosman. Improving model-based
+genetic programming for symbolic regression of small expressions. Evolutionary Computation, page tba,
+2020.
+[43] F. O. de Franca and G. S. I. Aldeia. Interaction-Transformation Evolutionary Algorithm for Symbolic
+Regression. Evolutionary Computation, pages 1–25, December 2020. ISSN 1063-6560. doi: 10.1162/
+evco_a_00285.
+[44] Ignacio Arnaldo, Krzysztof Krawiec, and Una-May O’Reilly. Multiple regression genetic programming.
+In Proceedings of the 2014 Annual Conference on Genetic and Evolutionary Computation, pages 879–886.
+ACM, 2014.
+[45] Michael Kommenda, Bogdan Burlacu, Gabriel Kronberger, and Michael Affenzeller. Parameter identifica-
+tion for symbolic regression using nonlinear least squares. Genetic Programming and Evolvable Machines,
+December 2019. ISSN 1573-7632. doi: 10.1007/s10710-019-09371-3.
+13[46] Marco Virgolin, Tanja Alderliesten, and Peter AN Bosman. Linear scaling with and within semantic
+backpropagation-based genetic programming for symbolic regression. In Proceedings of the Genetic and
+Evolutionary Computation Conference, pages 1084–1092, 2019.
+[47] Kalyanmoy Deb, Samir Agrawal, Amrit Pratap, and T Meyarivan. A Fast Elitist Non-dominated Sorting
+Genetic Algorithm for Multi-objective Optimization: NSGA-II. In Marc Schoenauer, Kalyanmoy Deb,
+Günther Rudolph, Xin Yao, Evelyne Lutton, Juan Julian Merelo, and Hans-Paul Schwefel, editors, Parallel
+Problem Solving from Nature PPSN VI, volume 1917, pages 849–858. Springer Berlin Heidelberg, Berlin,
+Heidelberg, 2000. ISBN 978-3-540-41056-0.
+[48] Eckart Zitzler, Marco Laumanns, and Lothar Thiele. SPEA2: Improving the Strength Pareto Evolutionary
+Algorithm. Eidgenössische Technische Hochschule Zürich (ETH), Institut für Technische Informatik und
+Kommunikationsnetze (TIK), 2001.
+[49] S. Bleuler, M. Brack, L. Thiele, and E. Zitzler. Multiobjective genetic programming: Reducing bloat
+using SPEA2. In Proceedings of the 2001 Congress on Evolutionary Computation, 2001, volume 1, pages
+536–543 vol. 1, 2001. doi: 10.1109/CEC.2001.934438.
+[50] Gregory S. Hornby. ALPS: The age-layered population structure for reducing the problem of premature
+convergence. In Proceedings of the 8th Annual Conference on Genetic and Evolutionary Computation,
+GECCO ’06, pages 815–822, New York, NY, USA, 2006. ACM. ISBN 1-59593-186-4. doi: 10.1145/
+1143997.1144142.
+[51] M.D. Schmidt and H. Lipson. Coevolution of Fitness Predictors. IEEE Transactions on Evolutionary
+Computation, 12(6):736–749, December 2008. ISSN 1941-0026, 1089-778X. doi: 10.1109/TEVC.2008.
+919006.
+[52] Raja Muhammad Atif Azad. Krzysztof Krawiec: Behavioral program synthesis with genetic programming.
+Genetic Programming and Evolvable Machines, 18(1):111–113, March 2017. ISSN 1389-2576, 1573-7632.
+doi: 10.1007/s10710-016-9283-7.
+[53] Bartosz Wieloch and Krzysztof Krawiec. Running programs backwards: Instruction inversion for effective
+search in semantic spaces. In Proceedings of the 15th Annual Conference on Genetic and Evolutionary
+Computation, pages 1013–1020, 2013.
+[54] Krzysztof Krawiec and Tomasz Pawlak. Approximating geometric crossover by semantic backpropagation.
+In Proceedings of the 15th Annual Conference on Genetic and Evolutionary Computation, pages 941–948,
+2013.
+[55] Tomasz P Pawlak, Bartosz Wieloch, and Krzysztof Krawiec. Semantic backpropagation for designing
+search operators in genetic programming. IEEE Transactions on Evolutionary Computation, 19(3):326–340,
+2014.
+[56] Alexander Topchy and William F. Punch. Faster genetic programming based on local gradient search of
+numeric leaf values. In Proceedings of the Genetic and Evolutionary Computation Conference (GECCO-
+2001), pages 155–162, 2001.
+[57] J.C. Bongard and H. Lipson. Nonlinear System Identification Using Coevolution of Models and Tests.
+IEEE Transactions on Evolutionary Computation, 9(4):361–384, August 2005. ISSN 1089-778X. doi:
+10.1109/TEVC.2005.850293.
+[58] Michael Kommenda, Gabriel Kronberger, Stephan Winkler, Michael Affenzeller, and Stefan Wagner.
+Effects of constant optimization by nonlinear least squares minimization in symbolic regression. In
+Christian Blum, Enrique Alba, Thomas Bartz-Beielstein, Daniele Loiacono, Francisco Luna, Joern Mehnen,
+Gabriela Ochoa, Mike Preuss, Emilia Tantar, and Leonardo Vanneschi, editors, GECCO ’13 Companion:
+Proceeding of the Fifteenth Annual Conference Companion on Genetic and Evolutionary Computation
+Conference Companion, pages 1121–1128, Amsterdam, The Netherlands, 6. ACM. doi: doi:10.1145/
+2464576.2482691.
+14[59] Bogdan Burlacu, Gabriel Kronberger, and Michael Kommenda. Operon C++ an efficient genetic pro-
+gramming framework for symbolic regression. In Proceedings of the 2020 Genetic and Evolutionary
+Computation Conference Companion, pages 1562–1570, 2020.
+[60] Fabrício Olivetti de França. A greedy search tree heuristic for symbolic regression. Information Sciences,
+442:18–32, 2018.
+[61] Marco Virgolin, Tanja Alderliesten, Cees Witteveen, and Peter A N Bosman. Scalable genetic programming
+by gene-pool optimal mixing and input-space entropy-based building-block learning. In Proceedings of
+the Genetic and Evolutionary Computation Conference, pages 1041–1048, 2017.
+[62] Ronald J. Williams. Simple statistical gradient-following algorithms for connectionist reinforcement
+learning. Machine learning, 8(3-4):229–256, 1992.
+[63] Joaquin Vanschoren, Jan N. van Rijn, Bernd Bischl, and Luis Torgo. OpenML: Networked Science in
+Machine Learning. SIGKDD Explorations, 15(2):49–60, 2013. doi: 10.1145/2641190.2641198.
+[64] M. Lichman. UCI Machine Learning Repository. University of California, Irvine, School of Information
+and Computer Sciences, 2013.
+[65] Richard P. Feynman, Robert B. Leighton, and Matthew Sands. The Feynman Lectures on Physics, Vol. I:
+The New Millennium Edition: Mainly Mechanics, Radiation, and Heat. Basic Books, September 2015.
+ISBN 978-0-465-04085-8.
+[66] Steven H Strogatz. Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry,
+and Engineering. Westview press, 2014.
+[67] William La Cava, Kourosh Danai, and Lee Spector. Inference of compact nonlinear dynamic models by
+epigenetic local search. Engineering Applications of Artificial Intelligence, 55:292–306, October 2016.
+ISSN 0952-1976. doi: 10.1016/j.engappai.2016.07.004.
+[68] E.J. Vladislavleva, G.F. Smits, and D. den Hertog. Order of Nonlinearity as a Complexity Measure for
+Models Generated by Symbolic Regression via Pareto Genetic Programming. IEEE Transactions on
+Evolutionary Computation, 13(2):333–349, 2009. ISSN 1089-778X. doi: 10.1109/TEVC.2008.926486.
+[69] Michael Kommenda, Gabriel Kronberger, Michael Affenzeller, Stephan M. Winkler, and Bogdan Burlacu.
+Evolving Simple Symbolic Regression Models by Multi-objective Genetic Programming. In Genetic
+Programming Theory and Practice, volume XIV of Genetic and Evolutionary Computation. Springer, Ann
+Arbor, MI, 2015.
+[70] Marco Virgolin, Andrea De Lorenzo, Eric Medvet, and Francesca Randone. Learning a formula of
+interpretability to learn interpretable formulas. In International Conference on Parallel Problem Solving
+from Nature, pages 79–93. Springer, 2020.
+[71] W. James Murdoch, Chandan Singh, Karl Kumbier, Reza Abbasi-Asl, and Bin Yu. Definitions, methods,
+and applications in interpretable machine learning. Proceedings of the National Academy of Sciences, 116
+(44):22071–22080, 10 2019-10-29. ISSN 0027-8424, 1091-6490. doi: 10.1073/pnas.1900654116.
+[72] Tianqi Chen and Carlos Guestrin. Xgboost: A scalable tree boosting system. In Proceedings of the 22nd
+Acm Sigkdd International Conference on Knowledge Discovery and Data Mining, pages 785–794. ACM,
+2016.
+[73] Guolin Ke, Qi Meng, Thomas Finley, Taifeng Wang, Wei Chen, Weidong Ma, Qiwei Ye, and Tie-Yan Liu.
+Lightgbm: A highly efficient gradient boosting decision tree. Advances in neural information processing
+systems, 30:3146–3154, 2017.
+[74] Leo Breiman. Random forests. Machine learning, 45(1):5–32, 2001.
+15[75] Robert E. Schapire. The boosting approach to machine learning: An overview. In Nonlinear Estimation
+and Classification, pages 149–171. Springer, 2003.
+[76] Michael D Schmidt, Ravishankar R Vallabhajosyula, Jerry W Jenkins, Jonathan E Hood, Abhishek S Soni,
+John P Wikswo, and Hod Lipson. Automated refinement and inference of analytical models for metabolic
+networks. Physical Biology, 8(5):055011, October 2011. ISSN 1478-3975. doi: 10.1088/1478-3975/8/5/
+055011.
+[77] Michael Schmidt and Hod Lipson. Comparison of Tree and Graph Encodings As Function of Problem
+Complexity. In Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation,
+GECCO ’07, pages 1674–1679, New York, NY, USA, 2007. ACM. ISBN 978-1-59593-697-4. doi:
+10.1145/1276958.1277288.
+[78] Grant Dick, Caitlin A. Owen, and Peter A. Whigham. Feature standardisation and coefficient optimisation
+for effective symbolic regression. In Proceedings of the 2020 Genetic and Evolutionary Computation
+Conference, GECCO ’20, pages 306–314, Cancún, Mexico, June 2020. Association for Computing
+Machinery. ISBN 978-1-4503-7128-5. doi: 10.1145/3377930.3390237.
+[79] Michael Kearns, Seth Neel, Aaron Roth, and Zhiwei Steven Wu. Preventing Fairness Gerrymandering:
+Auditing and Learning for Subgroup Fairness. arXiv:1711.05144 [cs], December 2018.
+[80] William La Cava and Jason H. Moore. Genetic programming approaches to learning fair classifiers. In
+Proceedings of the 2020 Genetic and Evolutionary Computation Conference, GECCO ’20, 2020. doi:
+10.1145/3377930.3390157.
+[81] Jerome H Friedman. Greedy function approximation: A gradient boosting machine. Annals of statistics,
+pages 1189–1232, 2001.
+[82] Janez Demšar. Statistical Comparisons of Classifiers over Multiple Data Sets. Journal of Machine Learning
+Research, 7(Jan):1–30, 2006. ISSN ISSN 1533-7928.
+
+
+References in paper (8):
+[1] A. Koyré, The Astronomical Revolution: Copernicus-
+Kepler-Borelli (Routledge, 2013).
+[2] N. M. Amil, N. Bredeche, C. Gagné, S. Gelly, M. Schoe-
+nauer, and O. Teytaud, in European Conference on Ge-
+netic Programming (Springer, 2009), pp. 327–338.
+[3] S. K. Pal and P. P. Wang, Genetic algorithms for pattern
+recognition (CRC press, 2017).
+[4] J. D. Lohn, W. F. Kraus, and D. S. Linden, IEEEAn-
+tenna & Propagation Society Mtg. 3, 814 (2002).
+[5] D. S. Linden, in Proceedings 2002 NASA/DoD Confer-
+ence on Evolvable Hardware (IEEE, 2002), pp. 147–151.
+[6] H. Yu and N. Yu, The Pennsylvania State University,
+University park pp. 1–9 (2003).
+[7] S. Panthong and S. Jantarang, in CCECE 2003-
+Canadian Conference on Electrical and Computer Engi-
+neering. Toward a Caring and Humane Technology (Cat.
+No. 03CH37436) (IEEE, 2003), vol. 3, pp. 1597–1600.
+[8] B. Oh, Y. Na, J. Yang, S. Park, J. Nang, and J. Kim,
+Advances in Electrical and Computer Engineering 10, 81
+(2010).
+[9] A. Ram, G. Boone, R. Arkin, and M. Pearce, Adaptive
+behavior 2, 277 (1994).
+[10] B. Delman, Master’s thesis, Rochester Institute of Tech-
+nology (2004).
+[11] P. Y. Lu, S. Kim, and M. Soljacic (????).
+[12] R. J. Bauer Jr, R. J. Bauer, et al., Genetic algorithms
+and investment strategies, vol. 19 (John Wiley & Sons,
+1994).
+[13] R. Venkatesan and V. Kumar, International Journal of
+Forecasting 18, 625 (2002).15
+[14] W. L. Cava, T. R. Singh, J. Taggart, S. Suri, and
+J. Moore, in International Conference on Learning Rep-
+resentations (2019), URL https://openreview.net/
+forum?id=Hke-JhA9Y7.
+[15] S. McAleer, F. Agostinelli, A. Shmakov, and P. Baldi,
+in International Conference on Learning Representations
+(2019), URL https://openreview.net/forum?id=
+Hyfn2jCcKm.
+[16] J. R. Koza and J. R. Koza, Genetic programming: on the
+programming of computers by means of natural selection,
+vol. 1 (MIT press, 1992).
+[17] M. D. Schmidt, R. R. Vallabhajosyula, J. W. Jenkins,
+J. E. Hood, A. S. Soni, J. P. Wikswo, and H. Lipson,
+Physical biology 8, 055011 (2011).
+[18] R. K. McRee, in Proceedings of the 12th Annual Confer-
+ence Companion on Genetic and Evolutionary Computa-
+tion (ACM, New York, NY, USA, 2010), GECCO ’10,
+pp. 1983–1990, ISBN 978-1-4503-0073-5, URL http:
+//doi.acm.org/10.1145/1830761.1830841.
+[19] S. Stijven, W. Minnebo, and K. Vladislavleva, in Proceed-
+ings of the 13th Annual Conference Companion on Ge-
+netic and Evolutionary Computation (ACM, New York,
+NY, USA, 2011), GECCO ’11, pp. 623–630, ISBN 978-1-
+4503-0690-4, URL http://doi.acm.org/10.1145/
+2001858.2002059.
+[20] W. Kong, C. Liaw, A. Mehta, and D. Sivakumar, in
+International Conference on Learning Representations
+(2019), URL https://openreview.net/forum?id=
+rkluJ2R9KQ.
+[21] T. McConaghy, in Genetic Programming Theory and
+Practice IX (Springer, 2011), pp. 235–260.
+[22] I. Arnaldo, U.-M. O’Reilly, and K. Veeramachaneni, in
+Proceedings of the 2015 Annual Conference on Genetic
+and Evolutionary Computation (ACM, 2015), pp. 983–
+990.
+[23] S. L. Brunton, J. L. Proctor, and J. N. Kutz, Proceedings
+of the National Academy of Sciences 113, 3932 (2016).
+[24] M. Quade, M. Abel, J. Nathan Kutz, and S. L. Brunton,
+Chaos: An Interdisciplinary Journal of Nonlinear Science
+28, 063116 (2018).
+[25] D. P. Searson, D. E. Leahy, and M. J. Willis, in Proceed-
+ings of the International multiconference of engineers and
+computer scientists (Citeseer, 2010), vol. 1, pp. 77–80.
+[26] R. Dubčáková, Genetic programming and evolvable ma-
+chines 12, 173 (2011).
+[27] M. Schmidt and H. Lipson, Science 324, 81 (2009).
+[28] H. Mhaskar, Q. Liao, and T. Poggio, Tech. Rep., Center
+for Brains, Minds and Machines (CBMM), arXiv (2016).
+[29] H. W. Lin, M. Tegmark, and D. Rolnick, Journal of Sta-
+tistical Physics 168, 1223 (2017).
+[30] T. Wu and M. Tegmark, Physical Review E 100, 033311
+(2019).
+[31] L. N. Smith and N. Topin, Super-convergence: Very fast
+training of residual networks using large learning rates
+(2018), URL https://openreview.net/forum?id=
+H1A5ztj3b.
+[32] L. N. Smith, A disciplined approach to neural network
+hyper-parameters: Part 1 – learning rate, batch size, mo-
+mentum, and weight decay (2018), 1803.09820.
+[33] J. Howard et al., fastai, https://github.com/
+fastai/fastai (2018).
+[34] R. Feynman, R. Leighton, and M. Sands, The Feyn-
+man Lectures on Physics: The New Millennium Edi-
+tion: Mainly Mechanics, Radiation, and Heat, v. 1 (Ba-
+sic Books, 1963), ISBN 9780465040858, URL https:
+//books.google.com/books?id=d76DBQAAQBAJ.
+[35] R. Feynman, R. Leighton, and M. Sands, The Feyn-
+man Lectures on Physics, no. v. 2 in The Feynman Lec-
+tures on Physics (Pearson/Addison-Wesley, 1963), ISBN
+9780805390476, URL https://books.google.com/
+books?id=AbruAAAAMAAJ.
+[36] R. Feynman, R. Leighton, and M. Sands, The Feyn-
+man Lectures on Physics, no. v. 3 in The Feynman Lec-
+tures on Physics (Pearson/Addison-Wesley, 1963), ISBN
+9780805390490, URL https://books.google.com/
+books?id=_6XvAAAAMAAJ.
+[37] H. Goldstein, C. Poole, and J. Safko, Classical Me-
+chanics (Addison Wesley, 2002), ISBN 9780201657029,
+URL
+https://books.google.com/books?id=
+tJCuQgAACAAJ.
+[38] J. D. Jackson, Classical electrodynamics (Wiley, New
+York, NY, 1999), 3rd ed., ISBN 9780471309321, URL
+http://cdsweb.cern.ch/record/490457.
+[39] S. Weinberg, Gravitation and Cosmology: Principles and
+Applications of the General Theory of Relativity (New
+York: Wiley, 1972).
+[40] M. Schwartz, Quantum Field Theory and the Stan-
+dard Model, Quantum Field Theory and the Stan-
+dard Model (Cambridge University Press, 2014), ISBN
+9781107034730, URL https://books.google.com/
+books?id=HbdEAgAAQBAJ.
+[41] J. McDermott, D. R. White, S. Luke, L. Manzoni,
+M. Castelli, L. Vanneschi, W. Jaskowski, K. Krawiec,
+R. Harper, K. De Jong, et al., in Proceedings of the 14th
+annual conference on Genetic and evolutionary computa-
+tion (ACM, 2012), pp. 791–798.
+
