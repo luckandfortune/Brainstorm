@@ -1,0 +1,53 @@
+
+I just listened to a song titled "Google doesn't work anymore."
+What would be good to have in it's place is something that allows people to find information they need easily and quickly.
+
+However, one of the main issues with this is 
+1. advertising
+2. spam avoidance
+Both of the above information sent to users (that they don't want sent to them)
+which creates a "Lossy" information channel. Essentially, there's information they want to see which constitutes
+a desired signal of information, which has some intrinsic density.
+This information is transmitted to the person from a source of information.
+maximal learning should occur when the minimum information is transmitted from source to destination.
+unneccesary or unwanted information lowers the transmission density, and is therefore undesired.
+
+funding approaches:
+1. Donations
+2. Advertising (see above)
+    This comes in multiple forms (third party from google, or via purchases are less relevent than those from first parties)
+3. Direct funding (recipient pays for the information)
+4. Sponsorships which don't require advertising
+5. subsidies
+  a. varying by source (i.e. merchandise sales, where the content improves turnover through a storefront)
+      The information could also be a lead in for services, such as a consulting or legal practice
+      or a taste of a class, or entertainment content, and provided to "hook" people and induce direct funding.
+
+Donations may or may not be robust, and relies on the goodwill of people to fund an organization.
+Advertising for donations is a thing, and can be very effective at improving donation streams.
+Advertisements are generally an effective way to increase sales, or producers wouldn't use them.
+
+One solution to this would be to decentralize the networking applications
+  (searching an index of websites for the information you want (i.e. web-search)
+   searching for videos (i.e. youtube or tiktok alternative like peertube/odyssy or lbry/mediagoblin etc...)
+   )
+
+One difficulty here is getting content into the service.
+This might require monetary incentives.
+Due to network effects, established players tend to have a good amount of implied trust/momentum, so they'll take a while to peter out or adapt.
+
+However, decentralized solutions are either consumer resource driven (the clients act as servers)
+or have a funding issue (servers are expensive, require administrators, and need time and money to operate)
+Solving this and maintaining information density at the same time requires an approach that involves one of sponsorship, direct funding, donations, or subsidies.
+Thus, it might be desirable to couple the service with a payment model to handle the economics.
+(i.e. a tuple like (client, server, content_identifier, price, assent))
+
+Where the server posts a price for the content, and refuses service if not compensated. (via either Dollars or bitcoin, perhaps? This could be a list of acceptable models)
+Then, there needs to be some analog to full-text search which allows searches to find the content most relevant to them.
+For a person to fund the content most similiar to what they want, the content itself should be addressable.
+
+This type of classification scheme might be well suited to neural nets, I'm not an expert, but apparently they can be designed to label typed information, given enough data.
+kinda like a neural net concordance. The topic is inherently complicated.
+
+Fortunately, there's a number of techniques, and a large number of projects which might be able to do this well.
+
