@@ -58,4 +58,9 @@ This type of classification scheme might be well suited to neural nets, I'm not 
 kinda like a neural net concordance. The topic is inherently complicated.
 
 Fortunately, there's a number of techniques, and a large number of projects which might be able to do this well.
+I'd be interested to know how one might perform full-text search in video content, and search that as well.
+I would expect there exists a conversion from 
+Audio -> International phonetic alphabet -> English word, which then might be homonyms.
+That is, two words that sound the same can be spelled differently, and two words with either the same sound, or same spelling, might have different meanings.
+
 
