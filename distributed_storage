@@ -127,3 +127,22 @@ To add encryption, so that the client, but not storage node, can decrypt the req
                 which must occur prior to the expiry of random numbers for storage validation.
             - If the data is released prior to all processes which rely on it to be complete, the memory failed.
                 In this instance, the process relying on it must throw an error to indicate failure.
+5.4 Security
+    5.4.1 Securing the data being computed against the compute node is likely impossible.
+            To prevent the node from storing and releasing the data to a third party, it would need to be encrypted, and then a function performed on the encrypted information
+            i.e. for encryption f() instead of z = x_1*x_2, f(z) = f(x_1)*f(x_2), and then the result would need to be inverted.
+            z = f^{-1}(f(z)). certain algebraic operations satisfy the property f(x_1*x_2) = f(x_1)*f(x_2) and are termed "homomorphisms" in abstract algebra.
+            ... upon additional research, apparently several systems actually already exist to support this.
+              https://en.wikipedia.org/wiki/Homomorphic_encryption
+            I would imagine that arbitrary computation would hit some limits.
+
+    5.4.2 To guarantee that a single node is performing the computation required, it should be possible to use some variety of error-correcting code.
+          For example, if there exist four nodes under independent ownership, and node_1 sends the same computation to node_2 and node_3 and node_4, expecting the same result (ignoring side-effects),
+            Then if one of the nodes does not provide the expected result, it can be inferred that they did not use the same computation.
+            This would imply that either an error was introduced at some step, or the node is malicious.
+            given knowledge of a malicious node, one should then perform some mitigating actions.
+            For example, self-verification, or by sending computation to a new node.
+            independent ownership is important. If government A sends information to co-ordinating nodes under the control of Government B, then Government B might want to 
+            use their control to their advantage. The nodes can then co-ordinate the error.
+            Which is to say, the malicious node could be the two in agreement, not the odd-node out. If all three are coordinating, that implies none of the computation can be trusted, since they can just send you whatever.
+
