@@ -137,7 +137,7 @@ Assume a semi-trusted party.
 if a party A states that they are not B, but met B in person, then person B is who person A says they are.
 In this case, then it can be trusted with some probability, that person B's pseudonym is controlled by an identity.
 Because person A is trusted with some probability then we can trust by reference.
-Assume further that certain networks iof nodes are traitorous identities, and independent non-traitorous nodes do not want to refer traitor nodes.
+Assume further that certain networks of nodes are traitorous identities, and independent non-traitorous nodes do not want to refer traitor nodes.
 There should then be an exponential decay in trust moving further away from the validator.
 Thus, a network of traitors cannot be more trusted than the validating traitor node.
 
