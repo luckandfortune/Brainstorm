@@ -147,11 +147,12 @@ This is because the duplicate pseudonym cannot be present in person without prov
 
 -- Entropy and other node purity measures.
 
+Consider a classification tree trained on a known dataset of user information.
 Entropy can be defined as -Sum{p(x)log(p(x)}
 
 That is, the weighted probability of the log of the probability.
 Or, using base 2, the average of the number of bits required to index a set of values 0 to 2^(n) -1.
-To some degree it is not necessary to rely on a statement from party A or party B.
+So to some degree it is not necessary to rely on a statement from party A or party B. One could obtain this information from the routing infrastructure, or a third party.
 What is needed to determine if a person in unique, is to have sufficient information to distinguish them from
   1. A computer or computational entity
   2. All other people
