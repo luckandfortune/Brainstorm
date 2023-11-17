@@ -145,4 +145,28 @@ for n nodes, if there is one duplicate pseudonym, n-1 nodes can be validated in 
 each identity could choose a primary pseudonym, and the pseudonym which is not validated by the other n-2 nodes can be removed.
 This is because the duplicate pseudonym cannot be present in person without providing evidence that an identity is associated to an additional pseudonym.
 
+-- Entropy and other node purity measures.
+
+Entropy can be defined as -Sum{p(x)log(p(x)}
+
+That is, the weighted probability of the log of the probability.
+Or, using base 2, the average of the number of bits required to index a set of values 0 to 2^(n) -1.
+To some degree it is not necessary to rely on a statement from party A or party B.
+What is needed to determine if a person in unique, is to have sufficient information to distinguish them from
+  1. A computer or computational entity
+  2. All other people
+A password and username might only be known by 1 person, or exposed to the workd somewhere.
+If published to the internet, it doesn't help a verifying party distinguish that individual, except to the extent that only that person authenticates with that pair of information.
+similarly, if you share something like a Netflix password (The company is cracking down on this)
+Your password-username pair distinguishes you from the rest of the world according to how well known the tuple is.
+
+This is also the basis for fingerprinting by salespeople and advertisers, who wish to track your movements on the web.
+All they need to do is obtain an amount of information sufficient to distiguish you from the rest of the world.
+There are roughly 10^10 people on Earth, currently, so the number of bits needed to make this determination is about
+ln(10^10)/ln(2) = 33.22
+The number of computational entities that can be generated will be much, much greater than that, however, if a number if picked,
+say 128 or 256 bits, such that it would be computationally infeasible to generate enough identites to overwhelm the needed number of bits to distinguish
+between entities, then one can use some set of characteristics to make that distinction,when such information is provided.
+
+
 -- actual math
