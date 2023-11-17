@@ -172,5 +172,10 @@ The number of computational entities that can be generated will be much, much gr
 say 128 or 256 bits, such that it would be computationally infeasible to generate enough identites to overwhelm the needed number of bits to distinguish
 between entities, then one can use some set of characteristics to make that distinction, when such distinguishing information is provided.
 
+Additionally, if one is interacting with a user over multiple sessions, the session itself is an instance of shared knowledge.
+If such a session is recorded, then the user can be distinguished by introducing information that would distinguish them from other users, and subsequently inferring
+the knowledge of that information. So, even if a password distinguishes a person between a family of 12 people, it might be possible to narrow the user down further during a session,
+and prior to allowing the use of a resource where authorization is limited to one party.
+
 
 -- actual math
